@@ -4,11 +4,12 @@ Netsuite-sdk-py is a Python SDK. It uses the SOAP client library zeep(https://py
 
 ## Installation
 
-	$ pip install netsuitesdk 
+    $ pip install netsuite-sdk-py
 
 ## Get Started
 
-There are two ways to access a NetSuite account via web services: 
+There are two ways to access a NetSuite account via web services:
+
 - Use token-based auth (TBA) (within each request). This is the mechanism supported by this SDK.
 - Use email, password, role and account id to login and start a session. This is not supported by this SDK
 
@@ -164,16 +165,16 @@ ns.logout()
 ``` -->
 
 ### Remarks and possible errors regarding authentication
+
 **Note:** NetSuite requires two-factor authentication (2FA) for
 all Administrator and other highly privileged roles in all NetSuite accounts.
 Instead, you can login with a non-highly privileged role or use
 token based authentication (TBA) with your requests. For TBA, see below.
 
-If login fails, a NetSuiteLoginError is thrown. 
+If login fails, a NetSuiteLoginError is thrown.
 
 For more information about NetSuite authentication, see:
-	(https://docs.oracle.com/cloud/latest/netsuitecs_gs/NSATH/NSATH.pdf)
-
+(https://docs.oracle.com/cloud/latest/netsuitecs_gs/NSATH/NSATH.pdf)
 
 <!-- ### Get Request
 A basic example (`ns` is a reference to a `NetSuiteClient` instance):
@@ -215,10 +216,10 @@ customer2 = ns.Customer(externalId='another_customer', email='test2@example.com'
 ns.upsertList(records=[customer1, customer2])
 ``` -->
 
-
 ## Integration Tests
 
-To run integration tests, you will set both login and TBA credentials for an actual Netsuite account with the right permissions. 
+To run integration tests, you will set both login and TBA credentials for an actual Netsuite account with the right permissions.
+
 ```
 # TBA credentials
 export NS_ACCOUNT=xxxx
@@ -259,7 +260,8 @@ python -m pytest --cov=netsuitesdk --cov-report html:cov_html
 We want to maintain code coverage of more than 95% for this project at all times.
 
 ## Documentation
-Documentation can be found in the docs/_build/html folder (open index.html) and soon in readthedocs.
+
+Documentation can be found in the docs/\_build/html folder (open index.html) and soon in readthedocs.
 For contributors: to build the documentation (cd to /docs and) run `make buildapi`
 as well as `make html`
 

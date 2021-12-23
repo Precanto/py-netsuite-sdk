@@ -1,11 +1,11 @@
-import setuptools
+from setuptools import setup
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
-setuptools.setup(
-    name='netsuite_sdk_py',
-    version = '2.1.0',
+setup(
+    name='netsuite-sdk-py',
+    version = '0.0.4',
     package_dir={"netsuitesdk": "netsuitesdk"},
     packages = ['netsuitesdk'],
     author = 'Precanto',
@@ -15,10 +15,8 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url = 'https://github.com/Precanto/py-netsuite-sdk',
-    download_url = 'https://github.com/Precanto/py-netsuite-sdk/archive/refs/tags/2.1.0.tar.gz',
     keywords=['netsuite', 'api', 'python', 'sdk'],
-    install_requires=["zeep==3.4.0", "requests"],
-    include_package_data=True,
+    install_requires=['lxml','zeep'],
     python_requires=">=3.6",
     classifiers = [
         'Topic :: Internet :: WWW/HTTP',
