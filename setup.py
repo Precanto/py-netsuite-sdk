@@ -16,7 +16,6 @@ setup(
     long_description_content_type="text/markdown",
     url = 'https://github.com/Precanto/py-netsuite-sdk',
     keywords=['netsuite', 'api', 'python', 'sdk'],
-    install_requires=['zeep'],
     python_requires=">=3.6",
     classifiers = [
         'Topic :: Internet :: WWW/HTTP',
