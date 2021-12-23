@@ -1,13 +1,13 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
     name='netsuite-sdk-py',
-    version = '0.0.8',
+    version = '0.0.9',
     package_dir={"netsuitesdk": "netsuitesdk"},
-    packages = ['netsuitesdk'],
+    packages =find_packages(exclude=["test"]),
     include_package_data=True,
     author = 'Precanto',
     license="MIT",
