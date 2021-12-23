@@ -6,8 +6,9 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setup(
     name='netsuite-sdk-py',
     version = '0.0.8',
-    package_dir={"netsuitesdk": "netsuitesdk", "netsuitesdk.api": "netsuitesdk.api"},
-    packages = ['netsuitesdk', "netsuitesdk.api"],
+    package_dir={"netsuitesdk": "netsuitesdk"},
+    packages = ['netsuitesdk'],
+    include_package_data=True,
     author = 'Precanto',
     license="MIT",
     author_email = 'sagar@precanto.com',
