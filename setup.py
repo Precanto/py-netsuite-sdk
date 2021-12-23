@@ -17,7 +17,7 @@ setuptools.setup(
     url = 'https://github.com/Precanto/py-netsuite-sdk',
     download_url = 'https://github.com/Precanto/py-netsuite-sdk/archive/refs/tags/1.0.1.tar.gz',
     keywords=['netsuite', 'api', 'python', 'sdk'],
-    install_requires=["zeep"],
+    install_requires=["requests"],
     include_package_data=True,
     python_requires=">=3.6",
     classifiers = [
