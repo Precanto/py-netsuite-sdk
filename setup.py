@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name='netsuite_sdk_py',
-    version = '1.0.3',
+    version = '1.0.0',
     package_dir={"netsuitesdk": "netsuitesdk"},
     packages = ['netsuitesdk'],
     author = 'Precanto',
@@ -15,7 +15,7 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url = 'https://github.com/Precanto/py-netsuite-sdk',
-    download_url = 'https://github.com/Precanto/py-netsuite-sdk/archive/refs/tags/1.0.3.tar.gz',
+    download_url = 'https://github.com/Precanto/py-netsuite-sdk/archive/refs/tags/1.0.0.tar.gz',
     keywords=['netsuite', 'api', 'python', 'sdk'],
     install_requires=["zeep", "requests"],
     include_package_data=True,
