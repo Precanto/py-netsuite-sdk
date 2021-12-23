@@ -1,4 +1,4 @@
-zeep==3.4.0
+zeep==4.1.0
 requests==2.26.0
 pytest==5.2.4
 pytest-cov==2.8.1
