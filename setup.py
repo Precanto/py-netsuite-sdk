@@ -5,20 +5,19 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name='netsuite-sdk-py',
-    version = '0.0.9',
-    package_dir={"netsuitesdk": "netsuitesdk"},
-    packages =find_packages(exclude=["test"]),
+    version= '0.1.0',
+    packages=find_packages(exclude=["test"]),
     include_package_data=True,
-    author = 'Precanto',
+    author='Precanto',
     license="MIT",
-    author_email = 'sagar@precanto.com',
-    description = 'Python SDK for accessing the NetSuite SOAP webservice',
+    author_email='sagar@precanto.com',
+    description='Python SDK for accessing the NetSuite SOAP webservice',
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url = 'https://github.com/Precanto/py-netsuite-sdk',
+    url='https://github.com/Precanto/py-netsuite-sdk',
     keywords=['netsuite', 'api', 'python', 'sdk'],
     python_requires=">=3.6",
-    classifiers = [
+    classifiers=[
         'Topic :: Internet :: WWW/HTTP',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
